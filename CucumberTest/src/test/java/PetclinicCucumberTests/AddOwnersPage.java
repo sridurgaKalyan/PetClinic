@@ -29,10 +29,7 @@ public class AddOwnersPage {
 	{
 		this.driver = driver;
 	}
-	public void PopulateAddOwnersData()
-	{
-		
-	}
+	
 	public void enterValues(Boolean isEdit)
 	{
 		if(isEdit){
@@ -42,7 +39,7 @@ public class AddOwnersPage {
 		    	el.clear();
 		    }
 		}
-		//driver.findElement(FName).clear();
+		
 		driver.findElement(FName).sendKeys(strFName);
 		driver.findElement(LName).sendKeys(strLName);
 		driver.findElement(Address).sendKeys(strAddr);

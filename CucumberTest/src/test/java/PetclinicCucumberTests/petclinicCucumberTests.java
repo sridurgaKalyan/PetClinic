@@ -118,7 +118,7 @@ public class petclinicCucumberTests {
 	
 	@Then("^it should take me to the specific Owner details$")
 	public void ItShouldTakeMeToListSpecificOwner() {
-		if (driver.findElement(By.cssSelector("table.table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > b:nth-child(1)")).getText().equals("Sridurga Kalyanaraman")) {
+		if (driver.findElement(By.cssSelector("table.table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > b:nth-child(1)")).getText().equals("Carlos Estaban")) {
 			System.out.println("Specific Owner fetching Successful");
 		} 
 		else {

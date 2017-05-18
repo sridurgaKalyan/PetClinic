@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="com.PetClinic.Pages.AddOwnersPage"/>
 <fullyQualifiedTypeName name="com.PetClinic.Pages.AdditionalOwnerDetails"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
@@ -27,4 +26,7 @@
 <fullyQualifiedTypeName name="org.apache.http.HttpRequest"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="org.junit.AfterClass"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

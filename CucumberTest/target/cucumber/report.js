@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('PetclinicCucumberTests/00HomePageLinks.feature');
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('PetclinicCucumberTests/Features/00HomePageLinks.feature');
 formatter.feature({
   "line": 1,
   "name": "CheckHomePageLinks",
@@ -28,17 +28,17 @@ formatter.match({
   "location": "petclinicCucumberTests.openBrowser()"
 });
 formatter.result({
-  "duration": 2134844432,
+  "duration": 2683398693,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.CheckMenuLinks()"
 });
 formatter.result({
-  "duration": 36950521,
+  "duration": 43579977,
   "status": "passed"
 });
-formatter.uri('PetclinicCucumberTests/01FindOwners.feature');
+formatter.uri('PetclinicCucumberTests/Features/01FindOwners.feature');
 formatter.feature({
   "line": 1,
   "name": "NavigatetoFindOwners",
@@ -73,21 +73,21 @@ formatter.match({
   "location": "petclinicCucumberTests.openBrowser()"
 });
 formatter.result({
-  "duration": 101561177,
+  "duration": 167985071,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.ClickOnFindOwnersLink()"
 });
 formatter.result({
-  "duration": 148903577,
+  "duration": 253223451,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.CheckIfNavigatedToFindOwnersScreen()"
 });
 formatter.result({
-  "duration": 29851007,
+  "duration": 26468489,
   "status": "passed"
 });
 formatter.scenario({
@@ -122,28 +122,28 @@ formatter.match({
   "location": "petclinicCucumberTests.openBrowser()"
 });
 formatter.result({
-  "duration": 89338429,
+  "duration": 135275455,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.ClickOnFindOwnersLink()"
 });
 formatter.result({
-  "duration": 133893579,
+  "duration": 187703484,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.IEnterLastNameAndCheck()"
 });
 formatter.result({
-  "duration": 227325854,
+  "duration": 522268205,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.ItShouldTakeMeToListSpecificOwner()"
 });
 formatter.result({
-  "duration": 35216000,
+  "duration": 32109626,
   "status": "passed"
 });
 formatter.scenario({
@@ -178,31 +178,31 @@ formatter.match({
   "location": "petclinicCucumberTests.openBrowser()"
 });
 formatter.result({
-  "duration": 86656092,
+  "duration": 118716747,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.ClickOnFindOwnersLink()"
 });
 formatter.result({
-  "duration": 133110468,
+  "duration": 165888715,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.I_do_not_enter_the_Lastname_and_click_on_Find_Owners()"
 });
 formatter.result({
-  "duration": 134649244,
+  "duration": 164884614,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.ItShouldTakeMeToListOfAllOwners()"
 });
 formatter.result({
-  "duration": 27215382,
+  "duration": 29167759,
   "status": "passed"
 });
-formatter.uri('PetclinicCucumberTests/02AddOwners.feature');
+formatter.uri('PetclinicCucumberTests/Features/02AddOwners.feature');
 formatter.feature({
   "line": 1,
   "name": "AddNewOwners",
@@ -247,38 +247,38 @@ formatter.match({
   "location": "petclinicCucumberTests.openBrowser()"
 });
 formatter.result({
-  "duration": 98570395,
+  "duration": 114963244,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.ClickOnFindOwnersLink()"
 });
 formatter.result({
-  "duration": 141912161,
+  "duration": 145323089,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.IClickOnAddOwnersLink()"
 });
 formatter.result({
-  "duration": 152817409,
+  "duration": 190262703,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.IAddNewOwner()"
 });
 formatter.result({
-  "duration": 427771689,
+  "duration": 477983843,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.ISeeTheNewOwnerAdded()"
 });
 formatter.result({
-  "duration": 25148000,
+  "duration": 30959384,
   "status": "passed"
 });
-formatter.uri('PetclinicCucumberTests/03AddPets.feature');
+formatter.uri('PetclinicCucumberTests/Features/03AddPets.feature');
 formatter.feature({
   "line": 1,
   "name": "AddNewPetsToOwners",
@@ -339,49 +339,49 @@ formatter.match({
   "location": "petclinicCucumberTests.openBrowser()"
 });
 formatter.result({
-  "duration": 92962975,
+  "duration": 109524568,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.ClickOnFindOwnersLink()"
 });
 formatter.result({
-  "duration": 141260511,
+  "duration": 151440238,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.IEnterLastNameAndCheck()"
 });
 formatter.result({
-  "duration": 183641827,
+  "duration": 203460151,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.ItShouldTakeMeToListSpecificOwner()"
 });
 formatter.result({
-  "duration": 23449811,
+  "duration": 27942365,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.IClickOnAddPets()"
 });
 formatter.result({
-  "duration": 3164997953,
+  "duration": 3210464373,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.IEnterNewPetValues()"
 });
 formatter.result({
-  "duration": 313107027,
+  "duration": 323779281,
   "status": "passed"
 });
 formatter.match({
   "location": "petclinicCucumberTests.IShouldSeeThePetAttachedToTheOwner()"
 });
 formatter.result({
-  "duration": 6040954544,
+  "duration": 6037028741,
   "status": "passed"
 });
 });
