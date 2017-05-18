@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="runner" project="CucumberTest" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="PetclinicCucumberTests.runner" time="2.193">
+    <testsuite name="Feature: CheckHomePageLinks" time="0.426">
+      <testsuite name="Scenario: Check the links on the home page" time="0.426">
+        <testcase name="Given I have opened the browser" classname="Given I have opened the browser" time="0.424"/>
+        <testcase name="When I have navigated to Petclinic application" classname="When I have navigated to Petclinic application" time="0.002"/>
+        <testcase name="Then the Menu buttons should exist" classname="Then the Menu buttons should exist" time="0.0"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: NavigatetoFindOwners" time="0.164">
+      <testsuite name="Scenario: Check the navigation to Find Owners Screen from Home Screen" time="0.164">
+        <testcase name="Given I am in the PetClinic Home Screen" classname="Given I am in the PetClinic Home Screen" time="0.161"/>
+        <testcase name="When I click on Find Owners link" classname="When I click on Find Owners link" time="0.0"/>
+        <testcase name="Then the application should be navigated to the Find Owners screen" classname="Then the application should be navigated to the Find Owners screen" time="0.003"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

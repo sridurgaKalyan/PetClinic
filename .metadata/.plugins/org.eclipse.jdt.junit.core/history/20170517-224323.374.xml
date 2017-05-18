@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="runner" project="CucumberTest" tests="3" started="3" failures="0" errors="2" ignored="1">
+  <testsuite name="PetclinicCucumberTests.runner" time="0.001">
+    <testsuite name="Feature: CheckHomePageLinks" time="0.001">
+      <testsuite name="Scenario: Check the links on the home page" time="0.001" incomplete="true">
+        <error>java.lang.NullPointerException
+	at PetclinicCucumberTests.petclinicCucumberTests.goToFacebook(petclinicCucumberTests.java:45)
+	at ✽.When I have navigated to Petclinic application(PetclinicCucumberTests/FindOwners.feature:7)
+
+</error>
+        <testcase name="Given I have opened the browser" classname="Given I have opened the browser" time="0.001"/>
+        <testcase name="When I have navigated to Petclinic application" classname="When I have navigated to Petclinic application" time="0.0">
+          <error>java.lang.NullPointerException
+	at PetclinicCucumberTests.petclinicCucumberTests.goToFacebook(petclinicCucumberTests.java:45)
+	at ✽.When I have navigated to Petclinic application(PetclinicCucumberTests/FindOwners.feature:7)
+
+</error>
+        </testcase>
+        <testcase name="Then the Menu buttons should exist" classname="Then the Menu buttons should exist" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

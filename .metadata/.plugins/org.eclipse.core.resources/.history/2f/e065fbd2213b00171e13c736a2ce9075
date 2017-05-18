@@ -1,0 +1,36 @@
+package com.PetClinic.Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class AddOwnersPage {
+	
+	WebDriver driver;
+	
+	By FName = By.id("firstName");
+	By LName = By.id("lastName");
+	By Address = By.id("address");
+	By City = By.id("city");
+	By Tel = By.id("telephone");
+	By NewOwner = By.tagName("form");
+	
+	public AddOwnersPage(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
+	public void enterValues()
+	{
+		driver.findElement(FName).sendKeys("Abirami");
+		driver.findElement(LName).sendKeys("Raghavendran");
+		driver.findElement(Address).sendKeys("14");
+		driver.findElement(City).sendKeys("Reading");
+		driver.findElement(Tel).sendKeys("07654451537");
+	}
+	public void submitNewOwner()
+	{
+		driver.findElement(NewOwner).submit();
+	}
+	
+
+}

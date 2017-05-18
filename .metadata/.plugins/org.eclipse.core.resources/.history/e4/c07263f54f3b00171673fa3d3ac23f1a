@@ -1,0 +1,73 @@
+package PetclinicCucumberTests;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import PetclinicCucumberTests.HomePage;
+
+import cucumber.annotation.en.Given;
+import cucumber.annotation.en.Then;
+import cucumber.annotation.en.When;
+
+public class petclinicCucumberTests {
+	WebDriver driver;
+	Properties prop = new Properties();
+
+	@Given("^I have opened the browser and navigated to PetClinic application$")
+	public void openBrowser() {
+
+		InputStream input = null;
+
+		try {
+
+			input = new FileInputStream("application.properties");
+
+			prop.load(input);
+
+			System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriver"));
+			if (driver == null) {
+				driver = new ChromeDriver();
+				driver.navigate().to(prop.getProperty("serverURL"));
+			}
+		} catch (Exception ex) {
+
+		}
+
+	}
+
+
+
+	@Then("^the Menu buttons should exist$")
+	public void CheckMenuLinks() {
+		if (driver.findElement(By.cssSelector(".active > a:nth-child(1)")).isDisplayed()) {
+			System.out.println("All Home Menu links found");
+		} else {
+			System.out.println("Home does not have any menus");
+		}
+		 //driver.close();
+	}
+
+
+	@When("^I click on Find Owners link$")
+	public void ClickOnFindOwnersLink() {
+		HomePage clickFindOwners = new HomePage(driver);
+		clickFindOwners.clickFindOwners();
+
+	}
+
+	@Then("^the application should be navigated to the Find Owners screen$")
+	public void CheckIfNavigatedToFindOwnersScreen() {
+		if (driver.findElement(By.cssSelector(".form-control")).isDisplayed()) {
+			System.out.println("Test 2 pass");
+		} else {
+			System.out.println("Test 2 fail");
+		}
+
+	}
+}

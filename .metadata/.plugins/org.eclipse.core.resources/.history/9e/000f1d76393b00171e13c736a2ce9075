@@ -1,0 +1,26 @@
+package com.PetClinic.Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class AddVisitPage {
+	
+	WebDriver driver;
+	
+	By visitDate = By.id("date");
+	By visitDesc = By.id("description");
+	
+	public void enterVisitDetails(){
+		
+		driver.findElement(visitDesc).sendKeys("`test visit data");
+	}
+	public void clickAddVisit(){
+		
+	}
+	
+	
+	public AddVisitPage(WebDriver driver){
+		this.driver = driver;
+	}
+
+}

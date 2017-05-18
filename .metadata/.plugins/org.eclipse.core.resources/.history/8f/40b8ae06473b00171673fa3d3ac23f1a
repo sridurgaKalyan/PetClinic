@@ -1,0 +1,9 @@
+Feature: CheckHomePageLinks
+
+Scenario: Check the links on the home page
+
+Given I have opened the browser and navigated to Petclinic application
+
+When I open Facebook website
+
+Then Login button should exits

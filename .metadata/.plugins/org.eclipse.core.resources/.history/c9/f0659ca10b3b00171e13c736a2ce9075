@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package com.PetClinic.Pages;
+
+import org.openqa.selenium.By;
+
+public class HomePage {
+	
+	
+	By finsOwnersPage = By.className("glyphicon  glyphicon-search");
+	public HomePage()
+	{
+		
+		
+	}
+	public void clickFindOwners()
+	{
+		
+	}
+
+}

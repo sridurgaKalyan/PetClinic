@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="runner" project="CucumberTest" tests="13" started="13" failures="0" errors="2" ignored="0">
+  <testsuite name="PetclinicCucumberTests.runner" time="1.216">
+    <testsuite name="Feature: CheckHomePageLinks" time="0.013">
+      <testsuite name="Scenario: Check the links on the home page" time="0.013">
+        <testcase name="Given I have opened the browser and navigated to PetClinic application" classname="Given I have opened the browser and navigated to PetClinic application" time="0.012"/>
+        <testcase name="Then the Menu buttons should exist" classname="Then the Menu buttons should exist" time="0.001"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: NavigatetoFindOwners" time="1.105">
+      <testsuite name="Scenario: Check the navigation to Find Owners Screen from Home Screen" time="0.182">
+        <testcase name="Given I have opened the browser and navigated to PetClinic application" classname="Given I have opened the browser and navigated to PetClinic application" time="0.15"/>
+        <testcase name="When I click on Find Owners link" classname="When I click on Find Owners link" time="0.032"/>
+        <testcase name="Then the application should be navigated to the Find Owners screen" classname="Then the application should be navigated to the Find Owners screen" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Find owner with last name" time="0.393" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table:nth-child(2) &gt; tbody:nth-child(1) &gt; tr:nth-child(1) &gt; td:nth-child(2) &gt; b:nth-child(1)"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'RaghavedransMBP', ip: '192.168.1.113', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/y6/6v6c_b397033m_cn4fz2pzmr0000gn/T/.org.chromium.Chromium.xbPbLc}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bb0051cb15307dc2d652de2cdec0040a
+*** Element info: {Using=css selector, value=table.table:nth-child(2) &gt; tbody:nth-child(1) &gt; tr:nth-child(1) &gt; td:nth-child(2) &gt; b:nth-child(1)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at PetclinicCucumberTests.petclinicCucumberTests.ItShouldTakeMeToListSpecificOwner(petclinicCucumberTests.java:117)
+	at ✽.Then it should take me to the specific Owner details(PetclinicCucumberTests/01FindOwners.feature:19)
+
+</error>
+        <testcase name="Given I have opened the browser and navigated to PetClinic application" classname="Given I have opened the browser and navigated to PetClinic application" time="0.13"/>
+        <testcase name="When I click on Find Owners link" classname="When I click on Find Owners link" time="0.232"/>
+        <testcase name="When I enter the Lastname and click on Find Owners" classname="When I enter the Lastname and click on Find Owners" time="0.027"/>
+        <testcase name="Then it should take me to the specific Owner details" classname="Then it should take me to the specific Owner details" time="0.004">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table.table:nth-child(2) &gt; tbody:nth-child(1) &gt; tr:nth-child(1) &gt; td:nth-child(2) &gt; b:nth-child(1)"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.4 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'RaghavedransMBP', ip: '192.168.1.113', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/y6/6v6c_b397033m_cn4fz2pzmr0000gn/T/.org.chromium.Chromium.xbPbLc}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bb0051cb15307dc2d652de2cdec0040a
+*** Element info: {Using=css selector, value=table.table:nth-child(2) &gt; tbody:nth-child(1) &gt; tr:nth-child(1) &gt; td:nth-child(2) &gt; b:nth-child(1)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at PetclinicCucumberTests.petclinicCucumberTests.ItShouldTakeMeToListSpecificOwner(petclinicCucumberTests.java:117)
+	at ✽.Then it should take me to the specific Owner details(PetclinicCucumberTests/01FindOwners.feature:19)
+
+</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: Find all owners without entering last name" time="0.319">
+        <testcase name="Given I have opened the browser and navigated to PetClinic application" classname="Given I have opened the browser and navigated to PetClinic application" time="0.144"/>
+        <testcase name="When I click on Find Owners link" classname="When I click on Find Owners link" time="0.141"/>
+        <testcase name="When I do not enter the Lastname and click on Find Owners" classname="When I do not enter the Lastname and click on Find Owners" time="0.03"/>
+        <testcase name="Then it should take me to list of existing Owner details" classname="Then it should take me to list of existing Owner details" time="0.004"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

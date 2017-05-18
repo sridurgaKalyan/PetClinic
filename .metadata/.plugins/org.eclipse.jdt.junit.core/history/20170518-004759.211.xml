@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="runner" project="CucumberTest" tests="18" started="18" failures="0" errors="0" ignored="0">
+  <testsuite name="PetclinicCucumberTests.runner" time="2.084">
+    <testsuite name="Feature: CheckHomePageLinks" time="0.018">
+      <testsuite name="Scenario: Check the links on the home page" time="0.018">
+        <testcase name="Given I have opened the browser and navigated to PetClinic application" classname="Given I have opened the browser and navigated to PetClinic application" time="0.016"/>
+        <testcase name="Then the Menu buttons should exist" classname="Then the Menu buttons should exist" time="0.002"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: NavigatetoFindOwners" time="1.067">
+      <testsuite name="Scenario: Check the navigation to Find Owners Screen from Home Screen" time="0.175">
+        <testcase name="Given I have opened the browser and navigated to PetClinic application" classname="Given I have opened the browser and navigated to PetClinic application" time="0.146"/>
+        <testcase name="When I click on Find Owners link" classname="When I click on Find Owners link" time="0.029"/>
+        <testcase name="Then the application should be navigated to the Find Owners screen" classname="Then the application should be navigated to the Find Owners screen" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Find owner with last name" time="0.39">
+        <testcase name="Given I have opened the browser and navigated to PetClinic application" classname="Given I have opened the browser and navigated to PetClinic application" time="0.132"/>
+        <testcase name="When I click on Find Owners link" classname="When I click on Find Owners link" time="0.22"/>
+        <testcase name="When I enter the Lastname and click on Find Owners" classname="When I enter the Lastname and click on Find Owners" time="0.038"/>
+        <testcase name="Then it should take me to the specific Owner details" classname="Then it should take me to the specific Owner details" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: Find all owners without entering last name" time="0.313">
+        <testcase name="Given I have opened the browser and navigated to PetClinic application" classname="Given I have opened the browser and navigated to PetClinic application" time="0.133"/>
+        <testcase name="When I click on Find Owners link" classname="When I click on Find Owners link" time="0.15"/>
+        <testcase name="When I do not enter the Lastname and click on Find Owners" classname="When I do not enter the Lastname and click on Find Owners" time="0.03"/>
+        <testcase name="Then it should take me to list of existing Owner details" classname="Then it should take me to list of existing Owner details" time="0.0"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: AddNewOwners" time="0.802">
+      <testsuite name="Scenario: Check the addition of new owners" time="0.802">
+        <testcase name="Given I have opened the browser and navigated to PetClinic application" classname="Given I have opened the browser and navigated to PetClinic application" time="0.131"/>
+        <testcase name="When I click on Find Owners link" classname="When I click on Find Owners link" time="0.156"/>
+        <testcase name="When I click on Add Owners Link" classname="When I click on Add Owners Link" time="0.409"/>
+        <testcase name="When I add new owners and click on Add Owner" classname="When I add new owners and click on Add Owner" time="0.024"/>
+        <testcase name="Then I see the new owner added" classname="Then I see the new owner added" time="0.082"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

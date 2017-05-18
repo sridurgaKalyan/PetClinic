@@ -1,0 +1,27 @@
+package com.PetClinic.Pages;
+
+import org.openqa.selenium.By;
+
+public class FindOwnersPage {
+	
+	
+	
+	By lastName = By.id("lastName");
+	By findOwner = By.linkText("Find Owner");
+	By addOwner = By.linkText("Add Owner");
+	
+	public void enterLastName()
+	{
+		
+		
+	}
+	public void clickFindOwner()
+	{
+		
+	}
+	public void clickAddOwner()
+	{
+		
+	}
+
+}

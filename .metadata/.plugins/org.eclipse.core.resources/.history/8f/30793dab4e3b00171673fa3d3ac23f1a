@@ -1,0 +1,10 @@
+Feature: NavigatetoFindOwners
+
+Scenario: Check the navigation to Find Owners Screen from Home Screen
+
+
+
+When I click on Find Owners link
+
+Then the application should be navigated to the Find Owners screen
+

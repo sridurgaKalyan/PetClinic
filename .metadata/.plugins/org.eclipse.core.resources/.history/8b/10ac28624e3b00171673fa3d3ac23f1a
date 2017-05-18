@@ -1,0 +1,9 @@
+Feature: CheckHomePageLinks
+
+Scenario: Check the links on the home page
+
+Given I have opened the browser 
+
+When I have navigated to Petclinic application
+
+Then the Menu buttons should exist

@@ -1,0 +1,34 @@
+package com.PetClinic.Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class AdditionalOwnerDetails {
+	
+	WebDriver driver;
+	public Boolean isPet = false;
+	
+	
+	By addNewPet = By.linkText("Add New Pet");
+	By editOwner = By.linkText("Edit Owner");
+	
+	if(isPet == true){
+		By editPet = By.linkText("Edit Pet");
+	}
+	
+	
+	public AdditionalOwnerDetails(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+
+		public void addNewPet()
+		{
+			driver.findElement(addNewPet).click();
+		}
+		
+		public void editOwner()
+		{
+			driver.findElement(editOwner).click();
+		}
+}

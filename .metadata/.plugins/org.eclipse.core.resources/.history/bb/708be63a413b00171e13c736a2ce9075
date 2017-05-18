@@ -1,0 +1,95 @@
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Properties;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.PetClinic.Pages.AddEditPetPage;
+import com.PetClinic.Pages.AddOwnersPage;
+import com.PetClinic.Pages.AddVisitPage;
+import com.PetClinic.Pages.AdditionalOwnerDetails;
+import com.PetClinic.Pages.FindOwnersPage;
+import com.PetClinic.Pages.HomePage;
+
+public class SeleniumMain {
+
+	public static void main(String[] args) {
+
+		Properties prop = new Properties();
+		InputStream input = null;
+
+		try {
+			input = new FileInputStream("~/application.properties");
+
+			prop.load(input);
+			
+		} catch (Exception ex) {
+
+		}
+
+		
+		
+		System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriver"));
+		ChromeDriver dr1 = new ChromeDriver();
+		dr1.get(prop.getProperty("serverURL"));
+		
+		// dr1.manage().window().maximize();
+		
+
+		HomePage clickFindOwners = new HomePage(dr1);
+		clickFindOwners.clickFindOwners();
+
+		FindOwnersPage ownersPage = new FindOwnersPage(dr1);
+
+		// ownersPage.enterLastName();
+		// ownersPage.clickFindOwner();
+		ownersPage.clickAddOwner();
+
+		AddOwnersPage newOwnersPage = new AddOwnersPage(dr1);
+
+		newOwnersPage.enterValues(false);
+		newOwnersPage.submitNewOwner();
+
+		AdditionalOwnerDetails addnOwnerDetails = new AdditionalOwnerDetails(dr1);
+		// addnOwnerDetails.addNewPet();
+		addnOwnerDetails.editOwner();
+
+		EditOwners(dr1);
+		addnOwnerDetails.addNewPet();
+		AddEditPetPage addNewPet = new AddEditPetPage(dr1);
+		addNewPet.enterPetDetails(false);
+		addNewPet.clickUpdatePet();
+
+		addnOwnerDetails.editPet();
+
+		AddEditPetPage editPet = new AddEditPetPage(dr1);
+
+		editPet.pName = "Dev";
+		editPet.pBirthDate = "2015/07/06";
+		editPet.pType = "bird";
+
+		editPet.enterPetDetails(true);
+		editPet.clickUpdatePet();
+
+		addnOwnerDetails.addNewVisit();
+
+		AddVisitPage addNewVisit = new AddVisitPage(dr1);
+		addNewVisit.enterVisitDetails();
+		addNewVisit.clickAddVisit();
+
+	}
+
+	private static void EditOwners(ChromeDriver dr1) {
+		AddOwnersPage editOwnersPage = new AddOwnersPage(dr1);
+
+		editOwnersPage.strFName = "Albert";
+		editOwnersPage.strLName = "Einstein";
+		editOwnersPage.strAddr = "23";
+		editOwnersPage.strCity = "Test";
+		editOwnersPage.strNum = "09876534219";
+
+		editOwnersPage.enterValues(true);
+		editOwnersPage.submitNewOwner();
+	}
+
+}

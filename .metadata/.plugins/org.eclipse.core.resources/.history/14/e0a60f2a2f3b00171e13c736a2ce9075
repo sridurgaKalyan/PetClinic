@@ -1,0 +1,20 @@
+package com.PetClinic.Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class AddEditPetPage {
+	
+	WebDriver driver;
+	
+	By petName = By.id("name");
+	By birthDate = By.id("birthDate");
+	By petType = By.id("type");
+	By petUpdate = By.tagName("form");
+	
+	public AddEditPetPage()
+	{
+		
+	}
+
+}

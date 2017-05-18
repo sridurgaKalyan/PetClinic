@@ -1,0 +1,25 @@
+package PetclinicCucumberTests;
+ 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith; 
+import cucumber.junit.Cucumber; 
+import cucumber.annotation.After;
+import cucumber.annotation.Before;
+
+@RunWith(Cucumber.class) 
+@Cucumber.Options(format = {"pretty", "html:target/cucumber"}) 
+
+
+public class runner { 
+	
+	 @BeforeClass
+	    public static void setup() {
+	        System.out.println("Ran the before");
+	    }
+
+	    @AfterClass
+	    public static void teardown() {
+	        System.out.println("Ran the after");
+	    }
+}

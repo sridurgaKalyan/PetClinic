@@ -1,0 +1,36 @@
+package com.PetClinic.Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class AdditionalOwnerDetails {
+	
+	WebDriver driver;
+	public Boolean isPetAvailable;
+	
+	
+	public void DoesOwnerHavePet()
+	{
+		isPetAvailable = driver.findElement(By.linkText("Edit Pet"))
+	}
+	
+	
+	public AdditionalOwnerDetails(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+
+		public void addNewPet()
+		{
+			driver.findElement(addNewPet).click();
+		}
+		
+		public void editOwner()
+		{
+			driver.findElement(editOwner).click();
+		}
+		public void editPet()
+		{
+			//driver.findElement(arg0)
+		}
+}
